@@ -29,11 +29,17 @@ async def _(event):
         for i in animation_ttl:
             await asyncio.sleep(animation_interval)
             await event.edit(animation_chars[i % 2])
-    elif input_str == "-_-":
+    elif input_str == "🌑":
         await event.edit(input_str)
         animation_chars = [
-            "-__-",
-            "-_-"
+            "🌒",
+            "🌓"
+            "🌔"
+            "🌕"
+            "🌖"
+            "🌗"
+            "🌘"
+            "🌑"
         ]
         for i in animation_ttl:
             await asyncio.sleep(animation_interval)
