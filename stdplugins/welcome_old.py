@@ -39,7 +39,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     borg.storage.WELCOME[event.chat_id] = input_str
-    await event.edit(" ~ تم حفظ الترحيب 🚸
+    await event.edit("تم حفظ الترحيب 🚸
 
 Channel : @VVPVI 📕")
  
@@ -51,7 +51,7 @@ async def _(event):
         return
     input_str = borg.storage.WELCOME[event.chat_id]
     del borg.storage.WELCOME[event.chat_id]
-    await event.edit("~ تم حذف الترحيب ✓
+    await event.edit("تم حذف الترحيب ✓
 Channel : @VVPVI 🚸
-••••••••••••••••••••••••••••••
-تحيب السابق كان :- `{}`.".format(input_str))
+
+ترحيب السابق كان :`{}`.".format(input_str))
