@@ -1,4 +1,3 @@
-from userbot import bot
 from telethon import events
 from userbot.utils import command, remove_plugin, load_module
 from var import Var
